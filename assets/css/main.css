@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+	font-family: lato;
+}
 }
 /*barra de navegacion*/
 .icon-user, .icon-video, .input-search, .categorias, .button-hamburguesa{
