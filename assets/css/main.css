@@ -14,3 +14,12 @@
     width: 40px;
     height: 40px;
 }
+.lista-hamburguesa {
+    list-style: none;
+}
+.lista-1:hover {
+     background-color: lightblue;
+}
+.lista-1 a {
+    text-decoration: none;
+}
