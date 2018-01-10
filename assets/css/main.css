@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*barra de navegacion*/
+.icon-user, .icon-video, .input-search, .categorias, .button-hamburguesa{
+    margin-top: 10px;
+}
+.right {
+    margin-left: 30px;
+}
+/*menu hamburguesa solo en mobile*/
+.button-hamburguesa {
+    width: 40px;
+    height: 40px;
+}
