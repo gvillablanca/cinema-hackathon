@@ -7,8 +7,7 @@ $(document).ready(function(){
   $(".login").show(); 
   */ 
 
-  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium").hide();
-  $(".login").show();  
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
 
   $(".user").click(function(){
     $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login").hide();
@@ -112,6 +111,8 @@ $("#botonFree").click(function () {
  /*splash INSOMNIA*/
 $(function () {
     setTimeout(function () {
+        $(".login").hide();
         $('#splash').fadeOut(500);
+        $(".login").show();
     }, 2000);
 });
