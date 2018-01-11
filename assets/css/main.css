@@ -9,6 +9,10 @@
 	font-family: lato;
 }
 
+img{
+	width: 50%;
+}
+
 body{
     background-color: #121924;
 }
