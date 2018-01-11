@@ -108,8 +108,6 @@ $("#botonPremiun").click(function () {
 $("#botonFree").click(function () {
     $("#caja-texto").html("FREE");
 });
-<<<<<<< HEAD
-=======
 
  /*splash INSOMNIA*/
 $(function () {
@@ -117,5 +115,3 @@ $(function () {
         $('#splash').fadeOut(500);
     }, 2000);
 });
-
->>>>>>> Subiendo Splash
