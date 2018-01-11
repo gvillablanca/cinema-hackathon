@@ -37,6 +37,7 @@ body{
 .right {
   margin-left: 30px;
 }
+<<<<<<< HEAD
 /*menu hamburguesa solo en mobile*/
 .button-hamburguesa {
   width: 40px;
@@ -51,6 +52,9 @@ body{
 .lista-1 a {
   text-decoration: none;
 }
+=======
+
+>>>>>>> login con firebase
 .left-nav {
   margin-left: 20%;
 }
@@ -180,3 +184,17 @@ body{
 .modal-footer .btn-default , .close span{
   color: white;
 }
+/*ajuste de botones de registro, premiun  */
+.button-margin {
+    margin-top: 40px;
+}
+.button-free {
+    margin-left: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+}
+.button-premiun {
+    margin-right: 40px;
+}
+
