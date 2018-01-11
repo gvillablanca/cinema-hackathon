@@ -74,7 +74,7 @@ function ingreso() {
         // ...
         console.log(errorCode);
         console.log(errorMessage);
-        alert("Usuario no Registrado, Registrate!")
+       /* alert("Usuario no Registrado, Registrate!")*/
     });
 
   
@@ -99,10 +99,21 @@ function observador() {
     });
 }
 observador();
-
+/*efecto de boton */
 $("#botonPremiun").click(function () {
     $("#caja-texto").html("PREMIUN");
 });
 $("#botonFree").click(function () {
     $("#caja-texto").html("FREE");
 });
+<<<<<<< HEAD
+=======
+
+ /*splash INSOMNIA*/
+$(function () {
+    setTimeout(function () {
+        $('#splash').fadeOut(500);
+    }, 2000);
+});
+
+>>>>>>> Subiendo Splash
