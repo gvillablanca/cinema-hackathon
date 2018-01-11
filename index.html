@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/main.css">
  </head>
- <body> 
+ <body>
  <!-- vivi  -->
  <!-- navbar -->
  <nav class="navbar navbar-default">
@@ -67,12 +67,12 @@
             <img  src="assets/img/film-01.png" alt=""></img>
             <img src="assets/img/filmhover-01.png" alt="" class="hover-film">
           </button>
-        
+
         </li>
         <li class="user">
           <a href="#">
             <i class="fas fa-user fa-2x"></i>
-            
+
           </a>
         </li>
       </ul>
@@ -121,13 +121,13 @@
            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p class="text-center">No tienes Cuenta?</p>
            </div>
-           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#myModalRegistro">
                 Registrate
               </button>
            </div>
          </div>
-        
+
       </div>
     </div>
   </div>
@@ -299,7 +299,7 @@
      <div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
       <a href="#" class="thumbnail">
        <img src="assets/img/poster star wars.jpg" alt="" class="img-responsive img-poster">
-      </a>      
+      </a>
      </div>
      <div class="col-lg-3 col-md-3 col-xs-4 col-sm-4">
       <a href="#" class="thumbnail">
@@ -485,7 +485,7 @@
    </div>
   </div>
  </section>
- <!--modal trailer --> 
+ <!--modal trailer -->
  <div class="modal fade" id="myModaltrailer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -520,33 +520,61 @@
 </div>
 
 
- <!-- maite -->
+<!-- maite-->
  <!-- pantalla usuario (5)-->
+<section id="description-user">
+  <div class="container user-description"> <!-- container -->
+    <div class="row">  <!--init row-->
+      <div class="col-lg-1 col-md-1 col-xs-2 col-sm-2 "><!-- init col-->
+        <ul class="red-social">
+          <li class="Share"></li>
+          <li class="social-face"></li>
+          <li class="social-twtt"></li>
+          <li class="social-goo" ></li>
+        </ul>
+      </div><!-- finish col-->
 
- <section class="user-section">
-   <div class="container"> <!-- container -->
-     <div class="row"> <!-- init row -->
-       <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4"> <!-- init col -->
-         <form class="procesar" action="index.html" method="post">
-           <div class="vacio">
-             <!--<i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 1000%;"></i>-->
-           </div>
-           <input  id="imagen" type="file" name=" imagen" size="30" value="">
-           <input type="submit" name="submit" value="Guardar">
-         </form>
-         <ul>
-           <li> <button type="button" name="button"> Lista</button> </li>
-           <li> <button type="button" name="button" class="settings-btn"> settings</button> </li>
-         </ul>
-       </div><!-- finish col -->
-     </div><!-- finish row -->
-     <div class="row">
-       <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
-       </div>
-     </div>
-   </div><!-- container -->
- </section>
- <!-- pantalla listado (7)-->
+      <div class="col-lg-4 col-md-4 col-xs-8 col-sm-8 config-user"> <!-- init col-->
+        <ul class="list-user">
+          <li> <button id="list" type="button" name="button"> Lista</button> </li>
+          <li> <button type="button" name="button"> <i class="fa fa-wrench" aria-hidden="true"></i> Ajustes</button> </li>
+        </ul>
+      </div><!-- finish col-->
+
+       <div class="col-lg-7 col-md-7 col-xs-8 col-sm-8 pull-right"><!-- init col-->
+         <ol class="date-user">
+           <li> <b>- Name: </b>lorem lorem Lorem  </li>
+           <li><b>- Description: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+           <li><b>- Tipo de User: </b> Lorem lorem lorem</li>
+         </ol>
+       </div><!-- finish col-->
+     </div><!-- finish row-->
+   </div> <!--container-->
+</section>
+<!-- pantalla listado (6)-->
+<section id="Listing pull-center">
+  <div class="container"><!-- container -->
+    <div class="row"><!-- row init-->
+      <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 config-user"> <!-- init col-->
+        <h2> <b>Mis Listas</b> </h2>
+        <ol class="fav-list">
+          <li>
+            <h4><b>Videos Recientes...</b></h4>
+            <img src="assets/img/no_image_available.png" width="50%"  alt="">
+          </li>
+          <li>
+            <h4><b>Favoritos</b></h4>
+            <img src="assets/img/no_image_available.png" width="50%"  alt="">
+          </li>
+          <li>
+            <h4> <b> Por ver...</b></h4>
+            <img src="assets/img/no_image_available.png" width="50%"  alt="">
+          </li>
+        </ol>
+      </div><!-- col finish -->
+    </div><!-- row finish -->
+  </div><!-- container -->
+</section>
 
 <!-- vane -->
  <!-- pantalla settings (7) -->
@@ -555,7 +583,7 @@
     <div class="col-lg-6 col-md-2 col-sm-3 col-sx-3">
       <img class="img-responsive" src="assets/img/user.png" alt="">
       <button>Cambiar Imagen</button>
-      </div>  
+      </div>
         <div class="col-lg-6 col-md-2 col-sm-3 col-sx-3">
           <button>Control Parental</button>
           <div class="row">
@@ -569,9 +597,9 @@
             </div>
           </div>
         </div>
-    </div>  
+    </div>
  </section>
- 
+
  <!-- pantalla film (8) -->
   <section id="indi_movies" class="indi_movies">
      <div class="container-fluid cont_film">
@@ -580,8 +608,8 @@
           <img  class="img-responsive" alt="">
         </div>
       </div>
-    </div> 
-   
+    </div>
+
     <button type="button" class="btn btn-primary btn-lg btn_film" data-toggle="modal" data-target="#myModal">SUBE TU FILM
     </button>
    <!--Modal-->
@@ -614,7 +642,7 @@
                    <div class="vacio">
                    </div>
                    <input id="imagen" type="file" name=" imagen" size="30" value="">
-                </form> 
+                </form>
               </div>
             </form>
           </div>
@@ -623,8 +651,8 @@
             <button type="button" class="btn btn-primary">SUBIR</button>
           </div>
         </div>
-      </div> 
-    </div>  
+      </div>
+    </div>
     <!--Galeria Imagenes Peli Indi -->
     <!--
     <div class="container">
@@ -650,7 +678,7 @@
       <!--Descripción Galeria Imagenes Películas Indi -->
 <!--
       </div>
-      <div class="row"> 
+      <div class="row">
         <div class="col-lg-3 col-md-2 col-sm-3 col-sm- hidden-xs description">
           <h4>UNA MUJER FANTÁSTICA</h4>
           <h5> Director <a href="#">Sebastián Lelio</a></h5>
@@ -676,12 +704,12 @@
           <h5><a href="#"> IMDb</a></h5>
         </div>
       </div>
-   </div>  
+   </div>
 -->
   <div class="container carrusel_film">
     <div class="row">
       <div class="col-md-12">
-        <div id="Carousel" class="carousel slide">  
+        <div id="Carousel" class="carousel slide">
           <ol class="carousel-indicators">
             <li data-target="#Carousel" data-slide-to="0" class="active"></li>
             <li data-target="#Carousel" data-slide-to="1"></li>
@@ -704,7 +732,7 @@
                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
               </div><!--.row-->
-            </div><!--.item-->    
+            </div><!--.item-->
             <div class="item">
               <div class="row">
                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
@@ -712,19 +740,19 @@
                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
               </div><!--.row-->
-            </div><!--.item-->    
+            </div><!--.item-->
           </div>
             <div col-sm-hidden col-xs-hidden><!--.carousel-inner-->
               <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
               <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div><!--.Carousel-->       
+            </div><!--.Carousel-->
         </div>
       </div>
     </div>
   </div><!--.container-->
   </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>

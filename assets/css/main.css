@@ -34,7 +34,7 @@ body{
     background-color: #121924;
     height: 700px !important;
     z-index: 4;
-    
+
 }
 
 /*barra de navegacion*/
@@ -202,9 +202,67 @@ body{
     margin-left: 40px;
     padding-left: 35px;
     padding-right: 35px;
-    
+
 }
 .button-premiun {
     margin-right: 40px;
 }
 
+
+/*Maite pagina (5 y 6) User*/
+.user-description{
+  margin:0;
+}
+.config-user{
+  text-align: center;
+  background-image: url("../img/user.png");
+  height: 55vh;
+  background-repeat: no-repeat;
+}
+.list-user, ul{
+  list-style: none;
+  padding-left: 25%;
+}
+.list-user li{
+  float: left;
+  margin-left: 5%;
+  margin-top: 125%;
+}
+.date-user{
+  margin-top: 10%;
+  margin-left: 15%;
+  list-style: none;
+  line-height: 200%;
+}
+.red-social{
+  margin-top: 100%;
+  padding:15%;
+  cursor: pointer;
+  opacity: 0.6;
+  filter: Alpha;
+  background-color: grey;
+  border-radius: 6px;
+}
+.Share{
+  background-image: url("../img/share-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+}
+.social-face{
+background-image: url("../img/facebook-logo.png");
+height: 6vh;
+background-repeat: no-repeat;
+}
+.social-twtt{
+  background-image: url("../img/twitter-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+}
+.social-goo{
+  background-image: url("../img/google-logo.png");
+  height: 6vh;
+  background-repeat: no-repeat;
+}
+.fav-list{
+  list-style: none;
+}
