@@ -7,26 +7,31 @@ $(document).ready(function(){
   $(".login").show(); 
   */ 
 
-  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
+  $(".list-section, .start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
 
   $(".user").click(function(){
-    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login").hide();
+    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login, .list-section").hide();
     $(".user-section").show();
   });
 
   $(".logo").click(function(){
-    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login").hide();
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login, .list-section").hide();
     $(".start-premium").show();
   });
 
   $(".settings-btn").click(function(){
-    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login").hide();
+    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login .list-section").hide();
     $(".setting-section").show();
   });
 
   $(".img-poster").click(function(){
-   $(".start-free, .login, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium").hide();
+   $(".start-free, .login, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .list-section").hide();
   $(".movie-details").show();
+  });
+
+  $(".list-btn").click(function(){
+   $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login, .user-section").hide();
+   $(".list-section").show();
   });
 
  });
@@ -34,7 +39,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#film_logo").click(function(){
 	$("#indi_movies").toggle();
- $(".start-premium, .start-free, .movie-details, .user-section").hide();
+ $(".start-premium, .start-free, .movie-details, .user-section, .login").hide();
 	});
 
 	$('#Carousel').carousel({
@@ -77,9 +82,6 @@ function ingreso() {
         console.log(errorMessage);
        /* alert("Usuario no Registrado, Registrate!")*/
     });
-
-  
-
 }
 function observador() {
     firebase.auth().onAuthStateChanged(function (user) {

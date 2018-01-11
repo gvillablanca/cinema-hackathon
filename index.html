@@ -522,7 +522,7 @@
 
 <!-- maite-->
  <!-- pantalla usuario (5)-->
-<section id="description-user">
+<section id="description-user" class="user-section">
   <div class="container user-description"> <!-- container -->
     <div class="row">  <!--init row-->
       <div class="col-lg-1 col-md-1 col-xs-2 col-sm-2 "><!-- init col-->
@@ -533,14 +533,12 @@
           <li class="social-goo" ></li>
         </ul>
       </div><!-- finish col-->
-
       <div class="col-lg-4 col-md-4 col-xs-8 col-sm-8 config-user"> <!-- init col-->
         <ul class="list-user">
-          <li> <button id="list" type="button" name="button"> Lista</button> </li>
-          <li> <button type="button" name="button"> <i class="fa fa-wrench" aria-hidden="true"></i> Ajustes</button> </li>
+          <li> <button id="list" type="button" name="button" class="list-btn"> Lista</button> </li>
+          <li> <button type="button" name="button" class="settings-btn"> <i class="fa fa-wrench" aria-hidden="true"></i> Ajustes</button> </li>
         </ul>
       </div><!-- finish col-->
-
        <div class="col-lg-7 col-md-7 col-xs-8 col-sm-8 pull-right"><!-- init col-->
          <ol class="date-user">
            <li> <b>- Name: </b>lorem lorem Lorem  </li>
@@ -551,8 +549,9 @@
      </div><!-- finish row-->
    </div> <!--container-->
 </section>
+
 <!-- pantalla listado (6)-->
-<section id="Listing pull-center">
+<section id="Listing pull-center" class="list-section">
   <div class="container"><!-- container -->
     <div class="row"><!-- row init-->
       <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 config-user"> <!-- init col-->
@@ -610,10 +609,10 @@
       </div>
     </div>
 
-    <button type="button" class="btn btn-primary btn-lg btn_film" data-toggle="modal" data-target="#myModal">SUBE TU FILM
+    <button type="button" class="btn btn-primary btn-lg btn_film" data-toggle="modal" data-target="#myModalfilm">SUBE TU FILM
     </button>
    <!--Modal-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="myModalfilm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
