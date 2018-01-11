@@ -3,15 +3,12 @@ $(document).ready(function(){
   * funcion de carrusel en seccion de pelicula
   * botones laterales de seccion pelicula
 
-   $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .login").hide();
-   $(".start-premium").show();
-   
-   */
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .navbar").hide();
+  $(".login").show(); 
+  */ 
 
   $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium").hide();
-  $(".login").show();
-
-   
+  $(".login").show();  
 
   $(".user").click(function(){
     $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login").hide();
@@ -26,6 +23,11 @@ $(document).ready(function(){
   $(".settings-btn").click(function(){
     $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login").hide();
     $(".setting-section").show();
+  });
+
+  $(".img-poster").click(function(){
+   $(".start-free, .login, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium").hide();
+  $(".movie-details").show();
   });
 
  });

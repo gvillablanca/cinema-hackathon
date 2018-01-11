@@ -3,6 +3,12 @@
   hover:#1c9b77;
   color texto/ iconos:#FF2D56;
 */
+.movie-details{
+  background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
