@@ -450,12 +450,12 @@
   <div class="container-fluid">
    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-     <h2>Titulo</h2>
+     <h2>Star Wars: El despertar de la fuerza</h2>
     </div>
    </div>
    <div class="row">
-    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aspernatur reiciendis sapiente quasi laboriosam mollitia fugiat numquam, aut animi, quos eveniet autem accusantium sit dolore harum repudiandae praesentium possimus pariatur.</p>
+    <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
+     <p class="description-movie">Tres décadas después de la derrota del Imperio Galáctico, una nueva amenaza surge. La Primera Orden intenta gobernar la galaxia y solamente un grupo de héroes pueden detenerla: Rey, una recolectora del planeta desolado Jakku, un stormtrooper rebelde y un poco de ayuda de La Resistencia.</p>
      <button type="button" class="btn btn-default play" aria-label="Left Align" data-toggle="modal" data-target="#myModalmovie">
        <span class="glyphicon glyphicon-play" aria-hidden="true" ></span>
      </button>
@@ -467,22 +467,50 @@
      <button type="button" class="btn btn-default op2" aria-label="Left Align">op2</button>
     </div>
    </div>
-   <div class="row">
-    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 sage">
-     <button type="button" class="btn btn-default left" id="left" aria-label="Left Align">
-       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-     </button>
-     <ul>
-      <li class="img-carrusel"><img src="assets/img/no_image_available.png" alt="" class="img-responsive carrusel"></li>
-      <li class="img-carrusel"><img src="assets/img/no_image_available.png" alt="" class="img-responsive carrusel"></li>
-      <li class="img-carrusel"><img src="assets/img/no_image_available.png" alt="" class="img-responsive carrusel"></li>
-      <li class="img-carrusel"><img src="assets/img/no_image_available.png" alt="" class="img-responsive carrusel"></li>
-     </ul>
-     <button type="button" class="btn btn-default right" aria-label="Left Align">
-       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-     </button>
-    </div>
-   </div>
+   <div class="container carrusel_film">
+     <div class="row">
+       <div class="col-md-12 col-lg-12">
+         <div id="Carousel" class="carousel slide">
+           <ol class="carousel-indicators">
+             <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+             <li data-target="#Carousel" data-slide-to="1"></li>
+             <li data-target="#Carousel" data-slide-to="2"></li>
+           </ol>
+           <!-- Carousel items -->
+           <div class="carousel-inner">
+             <div class="item active">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/no_image_available.png" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+           </div>
+             <div col-sm-hidden col-xs-hidden><!--.carousel-inner-->
+               <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+               <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+             </div><!--.Carousel-->
+         </div>
+       </div>
+     </div>
+   </div><!--.container-->
   </div>
  </section>
  <!--modal trailer -->
@@ -513,7 +541,7 @@
         <h4 class="modal-title" id="myModalLabel">Pelicula</h4>
       </div>
       <div class="modal-body">
-        <iframe width="554" height="280" src="https://www.youtube.com/embed/47nNoUSaJe0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe allowfullscreen="true" frameborder="0" mozallowfullscreen="true" scrolling="no" src="https://openload.co/embed/VQDmSz9txaY" webkitallowfullscreen="true" width="554" height="280"></iframe>
       </div>
     </div>
   </div>
@@ -705,50 +733,50 @@
       </div>
    </div>
 -->
-  <div class="container carrusel_film">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="Carousel" class="carousel slide">
-          <ol class="carousel-indicators">
-            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#Carousel" data-slide-to="1"></li>
-            <li data-target="#Carousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="row">
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
-              </div><!--.row-->
-            </div><!--.item-->
-            <div class="item">
-              <div class="row">
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
-              </div><!--.row-->
-            </div><!--.item-->
-            <div class="item">
-              <div class="row">
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
-                <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
-              </div><!--.row-->
-            </div><!--.item-->
-          </div>
-            <div col-sm-hidden col-xs-hidden><!--.carousel-inner-->
-              <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-              <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div><!--.Carousel-->
-        </div>
-      </div>
-    </div>
-  </div><!--.container-->
+   <div class="container carrusel_film">
+     <div class="row">
+       <div class="col-md-12 col-lg-12">
+         <div id="Carousel" class="carousel slide">
+           <ol class="carousel-indicators">
+             <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+             <li data-target="#Carousel" data-slide-to="1"></li>
+             <li data-target="#Carousel" data-slide-to="2"></li>
+           </ol>
+           <!-- Carousel items -->
+           <div class="carousel-inner">
+             <div class="item active">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster1.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster3.jpg" alt="Image" style="max-width:100%;"></a></div>
+                 <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/img/poster4.jpg" alt="Image" style="max-width:100%;"></a></div>
+               </div><!--.row-->
+             </div><!--.item-->
+           </div>
+             <div col-sm-hidden col-xs-hidden><!--.carousel-inner-->
+               <a data-slide="prev" href="#Carousel" class="left carousel-control"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+               <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+             </div><!--.Carousel-->
+         </div>
+       </div>
+     </div>
+   </div><!--.container-->
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -4,20 +4,7 @@
   color texto/ iconos:#FF2D56;
 */
 
-/* detalle peliculas
- *  detalle de seccion inicio
-*/
-.movie-details{
-  background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.img-carrusel{
-  display: inline-block;
-}
-.carrusel{
-  width: 50%;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +31,17 @@ body{
     height: 700px !important;
     z-index: 4;
 
+}
+/* detalle peliculas
+ *  detalle de seccion inicio
+*/
+.movie-details{
+  background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.description-movie{
+  text-align: justify;
 }
 
 /*barra de navegacion*/
