@@ -8,11 +8,9 @@
   padding: 0;
 	font-family: lato;
 }
-
-img{
-	width: 50%;
+.img-poster{
+	margin-bottom: 4%;
 }
-
 body{
   background-color: #121924;
 }
@@ -37,7 +35,7 @@ body{
 .right {
   margin-left: 30px;
 }
-<<<<<<< HEAD
+
 /*menu hamburguesa solo en mobile*/
 .button-hamburguesa {
   width: 40px;
@@ -52,9 +50,6 @@ body{
 .lista-1 a {
   text-decoration: none;
 }
-=======
-
->>>>>>> login con firebase
 .left-nav {
   margin-left: 20%;
 }

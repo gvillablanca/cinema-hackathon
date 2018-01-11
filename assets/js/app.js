@@ -1,15 +1,32 @@
-
- $(document).ready(function(){
+$(document).ready(function(){
  	/*genito
   * funcion de carrusel en seccion de pelicula
   * botones laterales de seccion pelicula
   */
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover").hide();
+  $(".start-premium").show();
+
+  $(".user").click(function(){
+    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film").hide();
+    $(".user-section").show();
+  });
+
+  $(".logo").click(function(){
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section").hide();
+    $(".start-premium").show();
+  });
+
+  $(".settings-btn").click(function(){
+    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section").hide();
+    $(".setting-section").show();
+  });
 
  });
 
 $(document).ready(function(){
 	$("#film_logo").click(function(){
 	$("#indi_movies").toggle();
+ $(".start-premium, .start-free, .movie-details, .user-section").hide();
 	});
 
 	$('#Carousel').carousel({
@@ -82,4 +99,3 @@ $("#botonPremiun").click(function () {
 $("#botonFree").click(function () {
     $("#caja-texto").html("FREE");
 });
-
