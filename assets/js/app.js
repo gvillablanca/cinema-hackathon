@@ -2,22 +2,29 @@ $(document).ready(function(){
  	/*genito
   * funcion de carrusel en seccion de pelicula
   * botones laterales de seccion pelicula
-  */
-  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover").hide();
-  $(".start-premium").show();
+
+   $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .login").hide();
+   $(".start-premium").show();
+   
+   */
+
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium").hide();
+  $(".login").show();
+
+   
 
   $(".user").click(function(){
-    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film").hide();
+    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login").hide();
     $(".user-section").show();
   });
 
   $(".logo").click(function(){
-    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section").hide();
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login").hide();
     $(".start-premium").show();
   });
 
   $(".settings-btn").click(function(){
-    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section").hide();
+    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login").hide();
     $(".setting-section").show();
   });
 
