@@ -7,7 +7,18 @@ $(document).ready(function(){
   $(".login").show(); 
   */ 
 
-  $(".list-section, .start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
+
+  
+
+    
+    
+    
+   
+
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .navbar").hide();
+  $(".login").show();
+
+   
 
   $(".user").click(function(){
     $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login, .list-section").hide();
@@ -51,6 +62,9 @@ $(document).ready(function(){
 $('#myModal2').on('shown.bs.modal', function () {
     $('#myInput').focus()
 });
+$('#modalPago').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+});
 
 /*registro con firebase*/
 function registrar() {
@@ -70,8 +84,8 @@ function registrar() {
     
 }
 function ingreso() {
-    var email2 = document.getElementById("ingresoEmail").value;
-    var password2 = document.getElementById("ingresoPassword").value;
+    var email2 = document.getElementById("registroEmail").value;
+    var password2 = document.getElementById("registroPassword").value;
 
     firebase.auth().signInWithEmailAndPassword(email2, password2).catch(function (error) {
         // Handle Errors here.
@@ -80,7 +94,7 @@ function ingreso() {
         // ...
         console.log(errorCode);
         console.log(errorMessage);
-       /* alert("Usuario no Registrado, Registrate!")*/
+       alert("Usuario no Registrado, Registrate!")
     });
 }
 function observador() {
@@ -110,11 +124,16 @@ $("#botonFree").click(function () {
     $("#caja-texto").html("FREE");
 });
 
- /*splash INSOMNIA*/
+/*splash*/
 $(function () {
     setTimeout(function () {
         $(".login").hide();
+
         $('#splash').fadeOut(500);
+
+        $('.splash').fadeOut(500);
         $(".login").show();
     }, 2000);
+
 });
+
