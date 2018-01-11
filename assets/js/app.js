@@ -36,3 +36,13 @@
           images[currentItem%imgcount].show();
    });
  */
+
+$(document).ready(function(){
+	$("#film_logo").click(function(){
+	$("#indi_movies").toggle();
+	});
+
+	$('#Carousel').carousel({
+        interval: 3000
+    })
+});

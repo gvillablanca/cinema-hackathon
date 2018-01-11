@@ -4,8 +4,8 @@
   color texto/ iconos:#FF2D56;
 */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 	font-family: lato;
 }
 
@@ -14,61 +14,169 @@ img{
 }
 
 body{
-    background-color: #121924;
+  background-color: #121924;
+}
+/*ESTRUCTURA BOTÓN */
+.btn{
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.btn:hover{
+  border:3px solid #1c9b77 ;
+  background-color: #1c9b77;
 }
 
 /*barra de navegacion*/
 .navbar-default{
-    margin:0;
-    border:0;
+  margin:0;
+  border:0;
 }
 .icon-user, .icon-video, .input-search, .categorias, .button-hamburguesa{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .right {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 /*menu hamburguesa solo en mobile*/
 .button-hamburguesa {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .lista-hamburguesa {
-    list-style: none;
+  list-style: none;
 }
 .lista-1:hover {
-     background-color: lightblue;
+  background-color: lightblue;
 }
 .lista-1 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .left-nav {
-    margin-left: 20%;
+  margin-left: 20%;
 }
 .navbar{
-    background-color: #09131A;
+  background-color: #09131A;
 }
 .navbar-default .navbar-nav>li>a{
-    color: #FF2D56;
+  color: #FF2D56;
 }
 .navbar-default .navbar-nav>li>.cat{
-    margin-top:5%;
-    font-size: 140%;
+  margin-top:5%;
+  font-size: 140%;
 }
 .navbar-default .navbar-nav>li>.cat:hover{
-    color: #1c9b77;
+  color: #1c9b77;
 }
 .logo img{
-    width:16vh;
+  width:16vh;
 }
 .search img{
-    width: 6vh;
-    margin-top: 4%;
+  width: 6vh;
+  margin-top: 4%;
 }
 .input_search{
-    margin-top:1%;
+  margin-top:1%;
 }
 .film_logo img{
-    width: 9vh;
-    margin-top: -24%;
+  width: 9vh;
+}
+.film_logo{
+  background-color: transparent;
+  border:none;
+}
+.film_logo:focus{
+  outline: none;
+}
+
+/*PANTALLA 8 VANE*/
+#indi_movies , #setting{
+  display: none;
+}
+.indi_movies{
+  text-align: center;
+}
+.description{
+  color:white;
+  text-align: center;
+}
+.description h5 a{
+    color:#FF2D56;
+}
+.description h5 a:hover{
+  font-size: 120%;
+}
+.photo img{
+  border-radius: 5px;
+}
+.btn_film{
+  text-align: center;
+  position: relative;
+  margin-top:-79vh;
+}
+.btn_film:focus{
+}
+.btn-primary:focus{
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.cont_film{
+  padding:0;
+}
+.movie_set{
+  background-image: url(../img/movie_set.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: 25% 61%;
+
+}
+/* CARRUSEL PANTALLA 8*/
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px;
+}
+.carousel-control.right , .carousel-control.left {
+  right: -9vh;
+  top: 7vh;
+  background-image: none;
+  color: #FF2D56;
+  font-size: 327%;
+}
+.carousel-control.left{
+  left: -9vh;
+}
+.carousel-control.right:hover , .carousel-control.left:hover{
+  color: #1c9b77;
+}
+/* INDICADORES */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -19px;
+  margin-right: -19px;
+
+}
+.carousel-indicators li {
+  background: #cecece;
+}
+.carousel-indicators .active {
+  background: #FF2D56;
+}
+.carrusel_film{
+  margin-top: 7vh;
+}
+/*MODAL ESTILOS */
+.modal-title , .modal-body{
+  text-align: left;
+}
+.modal-header , .modal-footer{
+  background-color: #09131A;
+}
+.modal-header h4{
+  color: #FF2D56;
+}
+.modal-footer .btn-default , .close span{
+  color: white;
 }
