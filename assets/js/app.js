@@ -6,11 +6,7 @@ $(document).ready(function(){
   $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .navbar").hide();
   $(".login").show(); 
   */ 
-
-
-  
-
-    
+  // Initialize Firebase
     
     
    
@@ -45,6 +41,7 @@ $(document).ready(function(){
    $(".list-section").show();
   });
 
+
  });
 
 $(document).ready(function(){
@@ -56,7 +53,37 @@ $(document).ready(function(){
 	$('#Carousel').carousel({
         interval: 3000
     })
+
 });
+//función modal film
+ var config = {
+    apiKey: "AIzaSyAQ5Af7KRHHFLVxaKv5bGjlCI23eqsJtao",
+    authDomain: "film-c0a36.firebaseapp.com",
+    databaseURL: "https://film-c0a36.firebaseio.com",
+    projectId: "film-c0a36",
+    storageBucket: "film-c0a36.appspot.com",
+    messagingSenderId: "608674654580"
+  };
+  firebase.initializeApp(config);
+    var TablaDeBaseDatos = firebase.database().ref('films');
+    $('#upload-file-selector').change(function(){
+      if(this.files && this.files[0]){
+        var archivo = new FileReader();
+        archivo.onload = function(e){
+          urlLarge = e.target.result;
+          $('#img').attr('src', urlLarge);
+        };
+        archivo.readAsDataURL(this.files[0]);
+      }
+    })
+  $(document).ready(function(){
+    $("#img").hide();
+    $("#save_btn").click(function(){
+        $("#img").show();
+        $("#myModal .close").click()  
+     })
+  })
+
 
 /*modales*/
 $('#myModal2').on('shown.bs.modal', function () {
@@ -136,4 +163,5 @@ $(function () {
     }, 2000);
 
 });
+
 
