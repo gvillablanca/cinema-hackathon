@@ -96,7 +96,7 @@
 </div>
  <!-- log in (2)-->
 <!-- Button trigger modal -->
-<section class="login">
+<section class="login inicio">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  center-block">
@@ -164,7 +164,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button onclick="ingreso()" type="button" class="btn btn-primary premiun-button" data-dismiss="modal">Acceder</button>
+        <button onclick="ingreso()" type="button" class="btn btn-primary premiun-button acceder" data-dismiss="modal">Acceder</button>
       </div>
     </div>
   </div>
@@ -196,7 +196,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button onclick="ingreso()" type="button" class="btn btn-primary free-button" data-dismiss="modal">Acceder</button>
+        <button onclick="ingreso()" type="button" class="btn btn-primary free-button acceder" data-dismiss="modal">Acceder</button>
       </div>
     </div>
   </div>
@@ -348,17 +348,15 @@
 </div>
 
  <!-- genito -->
- <!-- pantalla inicio (3) premium-->
+ <!-- pantalla inicio (3) premium--> 
   <section class="start-premium">
-
    <div class="container">
       <div id="movies" class="row"></div>
    </div>
-
    <div class="container default-movies">
     <div class="row">
      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-      <h2>Estrenos</h2>
+      <h2 class="title-movie">Estrenos</h2>
      </div>
     </div>
     <div class="row estrenos">
@@ -407,7 +405,7 @@
     </div>
     <div class="row">
      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-      <h2>Sugerencias para ti</h2>
+      <h2 class="title-movie">Sugerencias para ti</h2>
      </div>
     </div>
     <div class="row sugerencias">
@@ -461,7 +459,7 @@
    <div class="container ">
     <div class="row">
      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-      <h2>Sugerencias para ti</h2>
+      <h2 class="title-movie">Sugerencias para ti</h2>
      </div>
     </div>
     <div class="row sugerencias">
@@ -529,11 +527,11 @@
      <button type="button" class="btn btn-default trailer" aria-label="Left Align" data-toggle="modal" data-target="#myModaltrailer">
        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
      </button>
-     <button type="button" class="btn btn-default op1" aria-label="Left Align">op1</button>
-     <button type="button" class="btn btn-default op2" aria-label="Left Align">op2</button>
+     <button type="button" class="btn btn-default op1" aria-label="Left Align" onclick="window.location.href='http://www.imdb.com/'" target="_blank">imdb</button>
+     <button type="button" class="btn btn-default op2" aria-label="Left Align" onclick="window.location.href='https://www.filmaffinity.com/es/main.php'" target="_blank">filmaffinity</button>
     </div>
    </div>
-   <div class="container carrusel_film">
+   <div class="container carrusel_film2">
      <div class="row">
        <div class="col-md-12 col-lg-12">
          <div id="Carousel" class="carousel slide">

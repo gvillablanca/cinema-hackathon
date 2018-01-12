@@ -9,6 +9,9 @@
   padding: 0;
 	font-family: lato;
 }
+.title-movie{
+  color: #FF2D56;
+}
 .img-poster{
 	margin-bottom: 4%;
 }
@@ -204,6 +207,10 @@ body{
 }
 .carrusel_film{
   margin-top: 7vh;
+}
+
+.carrusel_film2{
+  margin-top: 10%;
 }
 /*MODAL ESTILOS */
 .modal-title , .modal-body{

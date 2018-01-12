@@ -2,7 +2,17 @@ $(document).ready(function(){
   /*genito
   * funcion de carrusel en seccion de pelicula
   * botones laterales de seccion pelicula
-  */ 
+  */
+
+   /*splash INSOMNIA*/
+   $(function () {
+       setTimeout(function () {
+           $(".inicio").hide();
+           $('#splash').fadeOut(500);
+           $(".inicio").show();
+       }, 2000);
+   });
+
 
 // Initialize Firebase
   var config = {
@@ -46,27 +56,36 @@ $(document).ready(function(){
   });
 
   $(".user").click(function(){
-    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login, .list-section").hide();
+    $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login, .list-section , #splash").hide();
     $(".user-section").show();
   });
 
   $(".logo").click(function(){
-    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login, .list-section").hide();
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login, .list-section, #splash").hide();
     $(".start-premium").show();
   });
 
+  $(".acceder1").click(function(){
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login, .list-section, #splash").hide();
+    $(".start-premium").show();
+  });
+  $(".acceder2").click(function(){
+    $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .user-section, .login, .list-section, #splash, .film_logo").hide();
+    $(".start-free").show();
+  });
+
   $(".settings-btn").click(function(){
-    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login .list-section").hide();
+    $(".start-free, .movie-details, .start-premium, .indi_movies, .hover-film, .user-section, .login .list-section, #splash").hide();
     $(".setting-section").show();
   });
 
   $(".img-poster-2").click(function(){
-   $(".start-free, .login, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .list-section").hide();
+   $(".start-free, .login, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .list-section, #splash").hide();
   $(".movie-details").show();
   });
 
   $(".list-btn").click(function(){
-   $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login, .user-section").hide();
+   $(".start-free, .movie-details, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login, .user-section, #splash").hide();
    $(".list-section").show();
   });
 
@@ -75,7 +94,7 @@ $(document).ready(function(){
 $(document).ready(function(){
  $("#film_logo").click(function(){
  $("#indi_movies").toggle();
- $(".start-premium, .start-free, .movie-details, .user-section, .login").hide();
+ $(".start-premium, .start-free, .movie-details, .user-section, .login , #splash").hide();
  });
 
  $('#Carousel').carousel({
@@ -132,14 +151,6 @@ $("#botonFree").click(function () {
     $("#caja-texto").html("FREE");
 });
 
- /*splash INSOMNIA*/
-$(function () {
-    setTimeout(function () {
-        $(".login").hide();
-        $('#splash').fadeOut(500);
-        $(".login").show();
-    }, 2000);
-});
 
 //API
 $(document).ready(() => {
@@ -223,3 +234,9 @@ function getMovie(){
       console.log(err);
     });
 }
+
+    function redirect()
+    {
+    var url = "http://www.imdb.com/";
+    window.location(url);
+    }
