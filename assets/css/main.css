@@ -34,6 +34,9 @@ body{
 /* detalle peliculas
  *  detalle de seccion inicio
 */
+.icon-web{
+  width: 5%;
+}
 .movie-details{
   background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
   background-size: 100%;
