@@ -1,5 +1,5 @@
 ﻿#Challenge Hackathon
-###Como objetivo general, se pidió crear una solución/producto que resolviera la necesidad del usuario 	  al consumir películas.
+###Como objetivo general, se pidió crear una solución/producto que resolviera la necesidad del usuario al consumir películas.
 
 ##Solución/Producto: 
 ##INSOMNIA
