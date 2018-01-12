@@ -37,12 +37,32 @@ body{
     z-index: 4;
 
 }
+#splash {
+  margin-top: 70px;
+}
+/*color de botones*/
+.color-letra {
+  color: white;
+}
+/*ajuste en foto*/
+.img-genito {
+  width: 320px;
+  height: 320px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
+.genito-img {
+    width: 320px;
+    height: 320px;
+    margin-left: 120px;
+}
 /* detalle peliculas
  *  detalle de seccion inicio
 */
 .icon-web{
   width: 5%;
 }
+
 .movie-details{
   background-image: url(../../assets/img/fondo-pelicula-star-wars.jpg);
   background-size: 100%;
@@ -250,6 +270,7 @@ body{
 .list-user, ul{
   list-style: none;
   padding-left: 0%;
+  margin-left: 30px;
 }
 .list-user li{
   float: left;
@@ -266,13 +287,33 @@ body{
   line-height: 250%;
   color: white;
 }
-.red-social{
-  margin-top: 180%;
-  padding-left: 20%;
-  opacity: 0.6;
-  filter: Alpha;
-  background-color: #09131A;
-  border-radius: 23px 23px 23px 23px;
+.red-social{    
+    margin-top: 180%;
+    padding-left: 15%;
+    opacity: 0.6;
+    filter: Alpha;
+    background-color: #09131A;
+    border-radius: 23px 23px 23px 23px;
+    /* margin-right: 20px; */
+    margin-left: 20px;
+}
+
+.btn-red {
+      margin-top: 5%;
+}
+.btns {
+  margin-top: 9%;
+}
+/*boton cambiar imagen*/
+.btn-img {
+    margin-left: 31%;
+    margin-top: 20px;
+}
+.margin-btn {
+  margin-bottom: 30px;
+}
+.btn-margin {
+  margin-top: 9%;
 }
 .fa-share-alt{
   color: #FF2D56;
