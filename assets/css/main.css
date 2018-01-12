@@ -258,7 +258,7 @@ body{
 }
 
 
-/*Maite pagina (5 y 6) User*/
+/* pagina (5 y 6) User*/
 .user-description{
   margin:0;
 }
@@ -376,7 +376,9 @@ background-repeat: no-repeat;
 b{
   color:#FF2D56;
 }
-
+.cont_api img{
+  height: 200%;
+}
 
 #movies img, #movie img{
   width:100%;
@@ -384,10 +386,13 @@ b{
 
 @media(min-width:960px){
   #movies .col-md-3 .well{
-    height: 390px;
+    height: 95%;
   }
 
   #movies .col-md-3 img{
     height:240px;
   }
+}
+.navbar-movie{
+  margin-bottom:3%;
 }
