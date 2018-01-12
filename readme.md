@@ -50,4 +50,4 @@ Método que ha permitido avanzar con mayor rapidez y estructurar de una  manera 
 + Framework Bootstrap
 + API de Open Movie Database (OMDB) o the movie database.
 
-link
+[https://github.com/gvillablanca/cinema-hackathon]
