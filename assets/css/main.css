@@ -12,6 +12,10 @@
 .img-poster{
 	margin-bottom: 4%;
 }
+/*parrafo no tienes cuenta*/
+.parrafo-cuenta{
+   color: white;
+}
 body{
   background-color: #121924;
 }
@@ -53,6 +57,9 @@ body{
 
 }
 /*login*/
+.login {
+  margin-top: 100px;
+}
 
 
 /*barra de navegacion*/

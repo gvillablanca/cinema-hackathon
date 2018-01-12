@@ -33,7 +33,17 @@ $(document).ready(function(){
      })
   })
 
-  $(".list-section, .start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
+  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login, .list-section, .navbar-movie").hide();
+
+  $(".free-button").click(function () {
+      $(".start-premiun, .login, .setting-section").hide();
+      $(".start-free, .navbar-movie").show();
+  });
+
+  $(".premiun-button").click(function () {
+      $(".start-free, .login, .setting-section").hide();
+      $(".start-premiun, .navbar-movie").show();
+  });
 
   $(".user").click(function(){
     $(".start-free, .movie-details, .start-premium, .setting-section, .indi_movies, .hover-film, .login, .list-section").hide();
@@ -113,25 +123,7 @@ function ingreso() {
        /* alert("Usuario no Registrado, Registrate!")*/
     });
 }
-function observador() {
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            // User is signed in.
-            var displayName = user.displayName;
-            var email = user.email;
-            var emailVerified = user.emailVerified;
-            var photoURL = user.photoURL;
-            var isAnonymous = user.isAnonymous;
-            var uid = user.uid;
-            var providerData = user.providerData;
-            // ...
-        } else {
-            // User is signed out.
-            // ...
-        }
-    });
-}
-observador();
+
 /*efecto de boton */
 $("#botonPremiun").click(function () {
     $("#caja-texto").html("PREMIUN");
