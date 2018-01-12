@@ -31,7 +31,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 navbar-left">
       <form class="navbar-form navbar-left left-nav searchForm">
-       <input class="form-control" id="searchText" placeholder="Buscar peliculas..." type="text">
+        <div class="form-group search">
+         <a href="#"><img src="assets/img/search-01.png" alt="" class="btn-search"></a>
+          <input type="text" class="form-control input_search searchText" placeholder="Buscar">
+        </div>
+
       </form>
       <ul class="nav navbar-nav navbar-left  left-nav">
         <li class="dropdown">
@@ -544,31 +548,38 @@
   </div>
 </div>
 
-
 <!-- maite-->
  <!-- pantalla usuario (5)-->
 <section id="description-user" class="user-section">
   <div class="container user-description"> <!-- container -->
     <div class="row">  <!--init row-->
-      <div class="col-lg-1 col-md-1 col-xs-2 col-sm-2 "><!-- init col-->
+      <div class="col-lg-1 col-md-1 pull-right"><!-- init col-->
         <ul class="red-social">
-          <li class="Share"></li>
-          <li class="social-face"></li>
-          <li class="social-twtt"></li>
-          <li class="social-goo" ></li>
+          <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+          <hr width="70%;">
+          <a href="https://www.facebook.com/sharer.php?u=https://meliza-fb.github.io/cinema-hackathon/" target="_blank">
+            <li class="social-face"></li>
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=https://meliza-fb.github.io/cinema-hackathon/" target="_blank">
+            <li class="social-twtt"></li>
+          </a>
+          <a href="https://plus.google.com/share?url=https://meliza-fb.github.io/cinema-hackathon/" target="_blank">
+            <li class="social-goo"></li>
+          </a>
         </ul>
       </div><!-- finish col-->
-      <div class="col-lg-4 col-md-4 col-xs-8 col-sm-8 config-user"> <!-- init col-->
-        <ul class="list-user">
-          <li> <button id="list" type="button" name="button" class="list-btn"> Lista</button> </li>
-          <li> <button type="button" name="button" class="settings-btn"> <i class="fa fa-wrench" aria-hidden="true"></i> Ajustes</button> </li>
+      <div id="margin-icon" class="col-lg-4 col-md-4 col-xs-8 col-sm-8 "> <!-- init col-->
+        <img class="img-circle" id="config-user" src="assets/img/user.jpg" alt="">
+        <ul id="list-user" class="list-user">
+          <li> <button id="list" type="button" name="button" class="list-btn"><i class="fa fa-th-list" aria-hidden="true"></i>  Lista</button> </li>
+          <li> <button type="button" name="button" class="settings-btn"> <i class="fa fa-cog" aria-hidden="true"></i> Ajustes</button> </li>
         </ul>
       </div><!-- finish col-->
        <div class="col-lg-7 col-md-7 col-xs-8 col-sm-8 pull-right"><!-- init col-->
          <ol class="date-user">
-           <li> <b>- Name: </b>lorem lorem Lorem  </li>
-           <li><b>- Description: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-           <li><b>- Tipo de User: </b> Lorem lorem lorem</li>
+           <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Name: </b>Jhon Nein Clark.</li>
+           <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Description: </b>Estudiante de Cine, poseo conocimientos del mundo cinematográfico y la capacidad de levantar proyectos audiovisuales, generados de la experiencia de haber realizado numerosos ejercicios de rodaje a lo largo de la carrera, para culminar con 8 cortometrajes, 1 capítulo de 50 minutos de una serie de ficción televisiva, documentales de investigación, spots y video clips.</li>
+           <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <b>Tipo de User: </b> Premium.</li>
          </ol>
        </div><!-- finish col-->
      </div><!-- finish row-->
@@ -583,7 +594,9 @@
         <h2> <b>Mis Listas</b> </h2>
         <ol class="fav-list">
           <li>
-            <h4><b>Videos Recientes</b></h4>
+
+            <h4><b>Películas Recientes...</b></h4>
+
             <img src="assets/img/no_image_available.png" width="50%"  alt="">
           </li>
           <li>
@@ -676,8 +689,8 @@
             <button type="button" class="btn btn-primary" id="save_btn">SUBIR</button>
           </div>
       </div>
-    </div> 
-  </div>  
+    </div>
+  </div>
 
     <!--Galeria Imagenes Peli Indi -->
    <div class="container carrusel_film">

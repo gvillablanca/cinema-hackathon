@@ -229,58 +229,98 @@ body{
 .user-description{
   margin:0;
 }
-.config-user{
-  text-align: center;
-  background-image: url("../img/user.png");
-  height: 55vh;
-  background-repeat: no-repeat;
+#config-user{
+  padding-top: 15%;
+  margin-left: 7%;
+  color: white;
 }
 .list-user, ul{
   list-style: none;
-  padding-left: 25%;
+  padding-left: 0%;
 }
 .list-user li{
   float: left;
-  margin-left: 5%;
-  margin-top: 125%;
+  margin-left: 18%;
+  /*margin-top: 35%;*/
 }
 .date-user{
+  border: 2px solid #FF2D56;
+  padding: 5%;
+  border-radius: 23px 23px 23px 23px;
   margin-top: 10%;
   margin-left: 15%;
   list-style: none;
-  line-height: 200%;
+  line-height: 250%;
+  color: white;
 }
 .red-social{
-  margin-top: 100%;
-  padding:15%;
-  cursor: pointer;
+  margin-top: 180%;
+  padding-left: 20%;
   opacity: 0.6;
   filter: Alpha;
-  background-color: grey;
-  border-radius: 6px;
+  background-color: #09131A;
+  border-radius: 23px 23px 23px 23px;
 }
-.Share{
-  background-image: url("../img/share-logo.png");
-  height: 6vh;
-  background-repeat: no-repeat;
+.fa-share-alt{
+  color: #FF2D56;
+  font-size: 200%;
+  margin-top: 40%;
 }
 .social-face{
-  background-image: url("../img/facebook-logo.png");
-  height: 6vh;
-  background-repeat: no-repeat;
+margin-top: 10%;
+background-image: url("../img/facebook-logo.png");
+height: 6vh;
+background-repeat: no-repeat;
 }
 .social-twtt{
+  cursor: pointer;
   background-image: url("../img/twitter-logo.png");
   height: 6vh;
   background-repeat: no-repeat;
+  margin-top: 10%;
 }
 .social-goo{
+  cursor: pointer;
   background-image: url("../img/google-logo.png");
   height: 6vh;
   background-repeat: no-repeat;
+  margin-top: 10%;
 }
 .fav-list{
   list-style: none;
+  color: white;
+}
+.btn-color{
+  background: transparent;
+}
+.list-btn{
+  width: 180%;
+  padding: 9%;
+  color: white;
+  font-size: 120%;
+  border-radius: 6px;
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.list-btn:hover{
+  background: #1c9b77;
+  border:3px solid #1c9b77 ;
+}
+.settings-btn{
+  width: 150%;
+  font-size: 120%;
+  padding: 7%;
+  color: white;
+  border-radius: 6px;
+  border:3px solid  #FF2D56;
+  background-color: transparent;
+}
+.settings-btn:hover{
+  background: #1c9b77;
+  border:3px solid #1c9b77 ;
+}
+b{
+  color:#FF2D56;
 }
 
 
