@@ -4,6 +4,35 @@ $(document).ready(function(){
   * botones laterales de seccion pelicula
   */ 
 
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAQ5Af7KRHHFLVxaKv5bGjlCI23eqsJtao",
+    authDomain: "film-c0a36.firebaseapp.com",
+    databaseURL: "https://film-c0a36.firebaseio.com",
+    projectId: "film-c0a36",
+    storageBucket: "film-c0a36.appspot.com",
+    messagingSenderId: "608674654580"
+  };
+  firebase.initializeApp(config);
+    var TablaDeBaseDatos = firebase.database().ref('films');
+    $('#upload-file-selector').change(function(){
+      if(this.files && this.files[0]){
+        var archivo = new FileReader();
+        archivo.onload = function(e){
+          urlLarge = e.target.result;
+          $('#img').attr('src', urlLarge);
+        };
+        archivo.readAsDataURL(this.files[0]);
+      }
+    })
+  $(document).ready(function(){
+    $("#img").hide();
+    $("#save_btn").click(function(){
+        $("#img").show();
+        $("#modal_film .close").click()  
+     })
+  })
+
   $(".list-section, .start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login").hide();
 
   $(".user").click(function(){
@@ -44,7 +73,7 @@ $(document).ready(function(){
     })
 
   $('#Carousel-1').carousel({
-        interval: 3000
+        interval: 2500
     })
 });
 
