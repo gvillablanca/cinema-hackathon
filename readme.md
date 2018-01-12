@@ -2,7 +2,7 @@
 Como objetivo general, se pidió crear una solución/producto que resolviera la necesidad del usuario al consumir películas.
 
 ## Solución/Producto: 
-** INSOMNIA **
+**INSOMNIA**
 
 ### ¿De qué trata?
 Es una plataforma online de películas con acceso a cuentas Premium y Free cuya diferencia con el resto es que posee estrenos inmediatos, facilita la búsqueda de actores reconocidos y los más importante es que Insomnia se transforma en una plataforma para cineastas independientes ya que posee una opción en la cuenta Primiun para subir su contenido que pueden ser vistos por clientes Free y Premium.
