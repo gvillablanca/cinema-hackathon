@@ -11,8 +11,17 @@ $(document).ready(function(){
     
    
 
-  $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .navbar").hide();
-  $(".login").show();
+    $(".start-free, .movie-details, .user-section, .setting-section, .indi_movies, .hover-film, .logo-hover, .start-premium, .login, .list-section, .navbar-movie").hide();
+
+    $(".free-button").click(function () {
+        $(".start-premiun, .login, .setting-section").hide();
+        $(".start-free, .navbar-movie").show();
+    });
+
+    $(".premiun-button").click(function () {
+        $(".start-free, .login, .setting-section").hide();
+        $(".start-premiun, .navbar-movie").show();
+    });
 
    
 

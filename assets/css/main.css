@@ -28,7 +28,6 @@ body{
 
 .fondosplash {
     background-color: #121924;
-    height: 700px !important;
     z-index: 4;
 
 }
@@ -48,7 +47,7 @@ body{
     left:0;
     bottom:0;
     width:100%;
-    height: 700px;
+
 }
 /*login*/
 
